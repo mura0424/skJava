@@ -3,7 +3,7 @@ package skJava.lesson05;
 public class Main {
 
 	public static void main(String[] args) {
-		
+		/*
 		//Triangle型のインスタンスを生成
 		Triangle triangle = new Triangle();
 		
@@ -19,5 +19,8 @@ public class Main {
 		System.out.println();
 		
 		System.out.println("終わり。" );
+		*/
+		//new FizzBazz().fizzbazz();
+		new Nabeatsu_of_the_World().notw();
 	}
 }
