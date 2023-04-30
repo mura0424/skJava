@@ -6,8 +6,28 @@ public class Car {
 	int num;   //車両No.
 	double gas;//ガソリン量
 	
+	public void setNumGas(int num, double gas) {
+		this.num = num;
+		this.gas = gas;
+	}
+	//セッター	
 	public void setNum(int num) {
 		this.num = num;
+	}
+	
+	//セッター
+	public void setGas(double gas) {
+		if (gas > 0) this.gas = gas;
+	}
+	
+	//ゲッター
+	public int getNum() {
+		return num;
+	}
+	
+	//ゲッター
+	public double getGas() {
+		return gas;
 	}
 	
 	//メソッド(振る舞い)
