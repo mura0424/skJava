@@ -10,14 +10,20 @@ public class Binary {
 		
 		String str = new String();
 		
+		//val = 0 の場合
+		if(val == 0) {
+			str = Integer.toString(val);
+			return str;
+		}
+
 		List<Integer> valList = new ArrayList<>();
+		
 		//計算
-		double j;
-		do {
-			double i = val / 2;
-			valList.add(val % 2);
-			j = i;
-		}while (j == 0);
+		int i = val;
+		while(i > 0) {
+			valList.add(i % 2);
+			i = i / 2;
+		}
 		
 		//組み立て（余りが二進数になる/余りの最後の値から並べる）
 		int listLen = valList.size();

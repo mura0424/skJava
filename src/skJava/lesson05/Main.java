@@ -21,6 +21,9 @@ public class Main {
 		System.out.println("終わり。" );
 		*/
 		//new FizzBazz().fizzbazz();
-		new Nabeatsu_of_the_World().notw();
+		
+		String string = new Binary().binary(11);
+		System.out.println(string);
+		//new Nabeatsu_of_the_World().notw();
 	}
 }
